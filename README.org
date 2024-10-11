@@ -1,0 +1,37 @@
+A database application that generates personalized workout plans with suggested exercises and schedules.
+
+* Table of contents :toc:
+- [[#description][Description]]
+- [[#database-design][Database design]]
+- [[#prerequisites-before-installing][Prerequisites before installing]]
+- [[#installing][Installing]]
+- [[#license][License]]
+
+* Description
+It generates workout plans and schedules based on the user's goals and preferences. The business logic is written in T-SQL using procedures and utility views.
+
+The flow that the user goes through:
+1. The User creates account/logs in
+2. The User enters their goal/s
+3. The User enters their preferences
+4. The App generates personalized workout plan
+5. The App adds a schedule to the workout plan
+6. The App tracks progress, kind of like a journal/notebook
+
+* Database design
+[[./Database/Design.png]]
+
+* Prerequisites before installing
+- Windows 10
+- T-SQL version 16
+- Microsoft SQL Server 2022
+- SQL Server Management Studio v19.1
+
+* Installing
+1. Go to the 'Database' directory and locate the 'CustomizedWorkoutGenerator.bak' file
+2. Use this file to restore(create) the database in your local environment
+3. Use the file 'Queries/FakeData/000-AppFlow.sql' to test the business logic.
+
+* License
+This project is licensed under the GNU GENERAL PUBLIC Version 3 License - see the file:./LICENSE file for details.
+
